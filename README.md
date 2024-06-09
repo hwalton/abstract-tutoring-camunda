@@ -28,7 +28,7 @@ For production setups we recommend using [Helm charts](https://docs.camunda.io/d
 
 > :information_source: Docker 20.10.16+ is required.
 
-To spin up a complete Camunda Platform 8 Self-Managed environment locally the [docker-compose.yaml](docker-compose.yaml) file in this repository can be used.
+To spin up a complete Camunda Platform 8 Self-Managed environment locally the [docker-compose.yaml](docker-compose.yml) file in this repository can be used.
 
 The full environment contains these components:
 - Zeebe
@@ -73,7 +73,7 @@ Zeebe, Operate, Tasklist, along with Optimize require a separate network from Id
 
 ### Using the basic components
 
-If Optimize, Identity, and Keycloak are not needed you can use the [docker-compose-core.yaml](docker-compose-core.yaml) instead which does not include these components:
+If Optimize, Identity, and Keycloak are not needed you can use the [docker-compose-core.yaml](docker-compose-core.yml) instead which does not include these components:
 
 ```
 docker compose -f docker-compose-core.yaml up -d

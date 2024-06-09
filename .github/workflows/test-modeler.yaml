@@ -1,4 +1,4 @@
-name: "Test docker-compose-web-modeler.yaml"
+name: "Test docker-compose-web-modeler.yml"
 on:
   push:
     branches:
@@ -8,5 +8,5 @@ jobs:
     uses: ./.github/workflows/template-deploy.yaml
     secrets: inherit
     with:
-      compose_args: "-f docker-compose.yaml -f docker-compose-web-modeler.yaml"
+      compose_args: "-f docker-compose.yml -f docker-compose-web-modeler.yml"
       run_e2e_tests: true
