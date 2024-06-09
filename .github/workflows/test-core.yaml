@@ -1,4 +1,4 @@
-name: "Test docker-compose-core.yml"
+name: "Test docker-compose-core.yaml"
 on:
   push:
     branches:
@@ -8,6 +8,6 @@ jobs:
     uses: ./.github/workflows/template-deploy.yaml
     secrets: inherit
     with:
-      compose_args: "-f docker-compose-core.yml"
+      compose_args: "-f docker-compose-core.yaml"
       run_e2e_tests: false
 
