@@ -1,7 +1,9 @@
-.idea
+.idea/
 .envrc
 release-notes-fetcher/release-notes-fetcher
 e2e_tests/playwright-report
 e2e_tests/test-results
 e2e_tests/node_modules
 .env
+certificates/
+data/
