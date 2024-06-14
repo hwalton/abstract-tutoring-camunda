@@ -94,7 +94,7 @@ You can however enable authentication of GRPC requests in Zeebe by setting the e
 ```
 ZEEBE_AUTHENTICATION_MODE=identity docker compose up -d
 ```
-or by modifying the default value in the [`.env`](.env) file.
+or by modifying the default value in the [`.env`](.env.example) file.
 
 ## Connectors
 
@@ -228,7 +228,7 @@ $ DOCKER_BUILDKIT=0 docker build -t bitnami/keycloak:19.0.3 "https://github.com/
 You can control access to specific processes and decision tables in Operate and Tasklist with [resource-based authorization](https://docs.camunda.io/docs/self-managed/concepts/access-control/resource-authorizations/).
 
 This feature is disabled by default and can be enabled by setting 
-`RESOURCE_AUTHORIZATIONS_ENABLED` to `true`, either via the [`.env`](.env) file or through the command line:
+`RESOURCE_AUTHORIZATIONS_ENABLED` to `true`, either via the [`.env`](.env.example) file or through the command line:
 
 ```
 RESOURCE_AUTHORIZATIONS_ENABLED=true docker compose up -d
@@ -239,7 +239,7 @@ RESOURCE_AUTHORIZATIONS_ENABLED=true docker compose up -d
 You can use [multi-tenancy](https://docs.camunda.io/docs/self-managed/concepts/multi-tenancy/) to achieve tenant-based isolation.
 
 This feature is disabled by default and can be enabled by setting
-`MULTI_TENANCY_ENABLED` to `true`, either via the [`.env`](.env) file or through the command line:
+`MULTI_TENANCY_ENABLED` to `true`, either via the [`.env`](.env.example) file or through the command line:
 
 ```
 ZEEBE_AUTHENICATION_MODE=identity MULTI_TENANCY_ENABLED=true docker compose up -d
