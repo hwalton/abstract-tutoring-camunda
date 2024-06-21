@@ -1,7 +1,23 @@
 # Fetch Upstream
-```azure
-$ git fetch upstream
-$ git checkout main
-$ git merge upstream/main
-$ git push origin main
-```
+    ```
+    $ git fetch upstream
+    $ git checkout main
+    $ git merge upstream/main
+    $ git push origin main
+    ```
+# Start docker container
+    ```
+    $ docker compose up -d
+    ```
+(dont use lightweight docker-compose-core.yaml)
+
+# Close docker container
+
+## Keep persistent data
+    ```
+    $ docker compose down
+    ```
+## Delete persistent data (reset engine)
+    ```
+    $ docker compose down -v
+    ```
